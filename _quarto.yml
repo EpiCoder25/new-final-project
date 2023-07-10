@@ -10,6 +10,17 @@ website:
       - about.qmd
       - href: sources.qmd
         text: Sources
+        
+  sidebar: 
+    -id: sources
+    title: "Sources"
+    style: "floating"
+    background: "#ffffff"
+    collapse-level: 2
+    contents:
+      - source-1.qmd
+      - source-2.qmd
+    
 
 
 format:
