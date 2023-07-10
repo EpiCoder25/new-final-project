@@ -9,7 +9,7 @@
   {
     "objectID": "index.html#analysis",
     "href": "index.html#analysis",
-    "title": "Engine Displacement",
+    "title": "How does the size affect fuel economy?",
     "section": "Analysis",
     "text": "Analysis\nThe displacement of an engine has a considerable effect on fuel economy. The data is from the Car Information Dataset found on Kaggle. Engine displacement is the amount of air the engine can combust. A 5.7L can hold and ignite that much air in the cylinders combined. Not suprisingly, higher displacement engines have a worse fuel economy because they burn more fuel. A higher displacement engine has 4x less fuel efficiency than a lower displacement engine."
   },

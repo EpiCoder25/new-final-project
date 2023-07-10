@@ -12,6 +12,7 @@ website:
         text: Sources
       - href: source-1.qmd
         text: Data
+
         
         
   sidebar: 
@@ -28,7 +29,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
     toc: true
 
