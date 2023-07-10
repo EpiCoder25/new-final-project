@@ -7,6 +7,13 @@
     "text": "fit_obj &lt;- stan_glm(data = cars, \n                    formula = mpg ~ cylinders + displacement, \n                    family = gaussian, \n                    refresh = 0,\n                    seed = 9)\n\nfit_obj\n\nstan_glm\n family:       gaussian [identity]\n formula:      mpg ~ cylinders + displacement\n observations: 398\n predictors:   3\n------\n             Median MAD_SD\n(Intercept)  36.4    1.2  \ncylinders    -0.5    0.4  \ndisplacement -0.1    0.0  \n\nAuxiliary parameter(s):\n      Median MAD_SD\nsigma 4.7    0.2   \n\n------\n* For help interpreting the printed output see ?print.stanreg\n* For info on the priors used see ?prior_summary.stanreg"
   },
   {
+    "objectID": "sources.html",
+    "href": "sources.html",
+    "title": "Sources",
+    "section": "",
+    "text": "An overview of sources used in my project."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
