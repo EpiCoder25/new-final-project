@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "new-final-project"
+  title: "Engine Displacement"
   navbar:
     left:
       - href: index.qmd
@@ -10,6 +10,9 @@ website:
       - about.qmd
       - href: sources.qmd
         text: Sources
+      - href: source-1.qmd
+        text: Data
+        
         
   sidebar: 
     -id: sources
@@ -29,5 +32,7 @@ format:
     css: styles.css
     toc: true
 
+
+## Mutate for conversion units
 
 

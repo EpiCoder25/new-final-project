@@ -1,8 +1,12 @@
 ---
-title: "new-final-project"
+title: "Engine Displacement"
+execute:
+  echo: false
+  warning: false
 ---
 ```{r}
 #| echo: false
+#| warning: false
 
 library(tidyverse)
 library(primer.data)
@@ -18,13 +22,6 @@ fit_obj <- stan_glm(data = cars,
                     family = gaussian, 
                     refresh = 0,
                     seed = 9)
-
-cars_graph
-
-```
-## Analysis
-This is from a common dataset on cars. I chose to compare the engine displacement on gas mileage. Engine displacement is the amount of air the engine can combust. A 5.7L can hold and ignite that much air in the cylinders combined. Not suprisingly, higher displacement engines have a worse fuel economy because they burn more fuel.
-```{r}
 fit_obj <- stan_glm(data = cars, 
                     formula = mpg ~ cylinders + displacement, 
                     family = gaussian, 
@@ -32,6 +29,14 @@ fit_obj <- stan_glm(data = cars,
                     seed = 9)
 
 fit_obj
+
+cars_graph
+
+```
+## Analysis
+The displacement of an engine has a considerable effect on fuel economy. The data is from the Car Information Dataset found on Kaggle. Engine displacement is the amount of air the engine can combust. A 5.7L can hold and ignite that much air in the cylinders combined. Not suprisingly, higher displacement engines have a worse fuel economy because they burn more fuel. A higher displacement engine has 4x less fuel efficiency than a lower displacement engine.
+```{r}
+
 
 
 ```

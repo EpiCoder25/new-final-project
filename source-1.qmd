@@ -1,4 +1,28 @@
 ---
-title: "Source 1"
+title: "Data"
 editor: visual
+execute:
+  echo: false
+  warning: false
 ---
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(tidyverse)
+library(primer.data)
+library(rstanarm)
+cars <- read_csv(file = "Automobile.csv", show_col_types = FALSE)
+fit_obj <- stan_glm(data = cars, 
+                    formula = mpg ~ cylinders +
+                    displacement, 
+                    family = gaussian, 
+                    refresh = 0,
+                    seed = 9)
+
+fit_obj
+
+
+
+```
