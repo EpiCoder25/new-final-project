@@ -26,5 +26,12 @@
     "title": "About",
     "section": "About the Project",
     "text": "About the Project\nThis project was created for Kane’s Free Data Science Bootcamp, a 6-week course that teaches you the basics of data science visualization. I didn’t know how to make anything you see on this website before this course!\n“This is data science”\n~Preceptor"
+  },
+  {
+    "objectID": "about.html#about-the-sources",
+    "href": "about.html#about-the-sources",
+    "title": "About",
+    "section": "About the Sources",
+    "text": "About the Sources\nI used a common car dataset from Kaggle for this data science project. https://www.kaggle.com/datasets/tawfikelmetwally/automobile-dataset?resource=download by Tawfik Elmetwally"
   }
 ]

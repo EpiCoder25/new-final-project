@@ -13,3 +13,6 @@ This project was created for [Kane’s Free Data Science Bootcamp](https://bootc
 "This is data science"
 \
   ~Preceptor
+  
+## About the Sources
+I used a common car dataset from Kaggle for this data science project. [https://www.kaggle.com/datasets/tawfikelmetwally/automobile-dataset?resource=download](https://www.kaggle.com/datasets/tawfikelmetwally/automobile-dataset?resource=download) by Tawfik Elmetwally
