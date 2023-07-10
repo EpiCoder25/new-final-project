@@ -224,6 +224,9 @@ This is rstanarm version 2.21.4
 <p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<section id="analysis" class="level2">
+<h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
+<p>This is from a common dataset on cars. I chose to compare the engine displacement on gas mileage. Engine displacement is the amount of air the engine can combust. A 5.7L can hold and ignite that much air in the cylinders combined. Not suprisingly, higher displacement engines have a worse fuel economy because they burn more fuel.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fit_obj <span class="ot">&lt;-</span> <span class="fu">stan_glm</span>(<span class="at">data =</span> cars, </span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                    <span class="at">formula =</span> mpg <span class="sc">~</span> cylinders <span class="sc">+</span> displacement, </span>
@@ -253,9 +256,6 @@ sigma 4.7    0.2
 * For info on the priors used see ?prior_summary.stanreg</code></pre>
 </div>
 </div>
-<section id="analysis" class="level2">
-<h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
-<p>This is from a common dataset on cars. I chose to compare the engine displacement on gas mileage. Engine displacement is the amount of air the engine can combust. A 5.7L can hold and ignite that much air in the cylinders combined. Not suprisingly, higher displacement engines have a worse fuel economy because they burn more fuel.</p>
 
 
 </section>

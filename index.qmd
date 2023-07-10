@@ -22,7 +22,8 @@ fit_obj <- stan_glm(data = cars,
 cars_graph
 
 ```
-
+## Analysis
+This is from a common dataset on cars. I chose to compare the engine displacement on gas mileage. Engine displacement is the amount of air the engine can combust. A 5.7L can hold and ignite that much air in the cylinders combined. Not suprisingly, higher displacement engines have a worse fuel economy because they burn more fuel.
 ```{r}
 fit_obj <- stan_glm(data = cars, 
                     formula = mpg ~ cylinders + displacement, 
@@ -35,5 +36,3 @@ fit_obj
 
 ```
 
-## Analysis
-This is from a common dataset on cars. I chose to compare the engine displacement on gas mileage. Engine displacement is the amount of air the engine can combust. A 5.7L can hold and ignite that much air in the cylinders combined. Not suprisingly, higher displacement engines have a worse fuel economy because they burn more fuel.
