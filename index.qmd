@@ -1,11 +1,40 @@
 ---
 title: "new-final-project"
 ---
+```{r}
+#| output: false  
+#| echo: false
 
-This is a Quarto website.
+library(tidyverse)
+library(primer.data)
+library(rstanarm)
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+cars <- read_csv(file = "Automobile.csv", show_col_types = FALSE)
+cars |> ggplot(aes(x = displacement, y = mpg)) + geom_point() + labs(title = "The Effect of Engine Displacement on Gas Mileage", x = "Engine Displacement", y = "Miles Per Gallon", subtitle = "Generally, as engine displacement increases, gas mileage decreases", caption = "Kaggle: Car Information Dataset") + theme_classic()
+
+
+
+fit_obj <- stan_glm(data = cars, 
+                    formula = mpg ~ cylinders + displacement, 
+                    family = gaussian, 
+                    refresh = 0,
+                    seed = 9)
+
+cars
+
+
+
+```
 
 ```{r}
-1 + 1
+fit_obj <- stan_glm(data = cars, 
+                    formula = mpg ~ cylinders + displacement, 
+                    family = gaussian, 
+                    refresh = 0,
+                    seed = 9)
+
+fit_obj
+
+
 ```
+
