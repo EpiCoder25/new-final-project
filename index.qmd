@@ -2,7 +2,6 @@
 title: "new-final-project"
 ---
 ```{r}
-#| output: false  
 #| echo: false
 
 library(tidyverse)
@@ -10,7 +9,7 @@ library(primer.data)
 library(rstanarm)
 
 cars <- read_csv(file = "Automobile.csv", show_col_types = FALSE)
-cars |> ggplot(aes(x = displacement, y = mpg)) + geom_point() + labs(title = "The Effect of Engine Displacement on Gas Mileage", x = "Engine Displacement", y = "Miles Per Gallon", subtitle = "Generally, as engine displacement increases, gas mileage decreases", caption = "Kaggle: Car Information Dataset") + theme_classic()
+cars_graph <- cars |> ggplot(aes(x = displacement, y = mpg)) + geom_point() + labs(title = "The Effect of Engine Displacement on Gas Mileage", x = "Engine Displacement", y = "Miles Per Gallon", subtitle = "Generally, as engine displacement increases, gas mileage decreases", caption = "Kaggle: Car Information Dataset") + theme_classic()
 
 
 
@@ -20,9 +19,7 @@ fit_obj <- stan_glm(data = cars,
                     refresh = 0,
                     seed = 9)
 
-cars
-
-
+cars_graph
 
 ```
 
