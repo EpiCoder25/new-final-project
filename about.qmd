@@ -2,8 +2,14 @@
 title: "About"
 ---
 
-About this site
+## About Me
+Hi! My name is Ethan Xiao, and as of 2025 I’m a junior at Jerome High School. I love listening to music, cars, and fixing things.
 
-```{r}
-1 + 1
-```
+email | xiaoethan1@gmail.com
+
+## About the Project
+This project was created for [Kane’s Free Data Science Bootcamp](https://bootcamp.davidkane.info), a 6-week course that teaches you the basics of data science visualization. I didn’t know how to make anything you see on this website before this course!
+
+"This is data science"
+\
+  ~Preceptor

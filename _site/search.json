@@ -11,6 +11,20 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Hi! My name is Ethan Xiao, and as of 2025 I’m a junior at Jerome High School. I love listening to music, cars, and fixing things.\nemail | xiaoethan1@gmail.com"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "",
+    "text": "Hi! My name is Ethan Xiao, and as of 2025 I’m a junior at Jerome High School. I love listening to music, cars, and fixing things.\nemail | xiaoethan1@gmail.com"
+  },
+  {
+    "objectID": "about.html#about-the-project",
+    "href": "about.html#about-the-project",
+    "title": "About",
+    "section": "About the Project",
+    "text": "About the Project\nThis project was created for Kane’s Free Data Science Bootcamp, a 6-week course that teaches you the basics of data science visualization. I didn’t know how to make anything you see on this website before this course!\n“This is data science”\n~Preceptor"
   }
 ]
