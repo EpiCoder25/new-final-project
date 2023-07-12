@@ -1,4 +1,9 @@
 ---
-title: "Source 2"
+title: Sources Used
 editor: visual
 ---
+
+Thank you to Tawfik Elmetwally for publishing [this dataset](https://www.kaggle.com/datasets/tawfikelmetwally/automobile-dataset?resource=download). Austin Reese for publishing [this dataset](https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data). Jessica Li for publishing [this dataset](https://www.kaggle.com/datasets/doaaalsenani/usa-cers-dataset).
+
+## Data Tidying
+I had to filter out the large amounts of data to only get the mpg and displacement columns.
