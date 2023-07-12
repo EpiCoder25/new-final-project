@@ -8,7 +8,7 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - href: sources.qmd
+      - href: source-2.qmd
         text: Sources
       - href: source-1.qmd
         text: Data
