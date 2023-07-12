@@ -1,5 +1,5 @@
 ---
-title: "Data"
+title: "Models"
 editor: visual
 execute:
   echo: false
@@ -10,10 +10,19 @@ execute:
 #| echo: false
 #| warning: false
 #| message: false
+# making all the annooying warnings go away!
 
 library(tidyverse)
 library(primer.data)
 library(rstanarm)
+# importing all libraries
+
+```
+
+```{r}
+
+# Models
+
 cars <- read_csv(file = "Automobile.csv", show_col_types = FALSE)
 fit_obj <- stan_glm(data = cars, 
                     formula = mpg ~ cylinders +
@@ -21,9 +30,22 @@ fit_obj <- stan_glm(data = cars,
                     family = gaussian, 
                     refresh = 0,
                     seed = 9)
+fit_obj |> 
+  as_tibble() |> 
+  ggplot(aes(x = displacement)) +
+  
+    geom_histogram(aes(y = after_stat(count/sum(count))), 
+                   bins = 100) +
+    labs(title = "Engine Displacement on MPG",
+         subtitle = "Higher displacement engines generally have a lower MPG",
+         x = "Displacement", 
+         y = "MPG",
+         caption = "Data source: Car information Dataset") +
+    scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+    theme_classic()
+
+# making the model using the 'rstanarm' library
 
 fit_obj
-
-
-
+# displaying the model on our website page
 ```
