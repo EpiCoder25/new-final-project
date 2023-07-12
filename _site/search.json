@@ -4,7 +4,7 @@
     "href": "index.html#analysis",
     "title": "How does the size affect fuel economy?",
     "section": "Analysis",
-    "text": "Analysis\nThe displacement of an engine has a considerable effect on fuel economy. The data is from the Car Information Dataset found on Kaggle. Engine displacement is the amount of air the engine can combust. A 5.7L can hold and ignite that much air in the cylinders combined. Not suprisingly, higher displacement engines have a worse fuel economy because they burn more fuel. A higher displacement engine has 4x less fuel efficiency than a lower displacement engine."
+    "text": "Analysis\nThe displacement of an engine has a considerable effect on fuel economy. The data is from the Car Information Dataset found on Kaggle. Engine displacement is the amount of air the engine can combust. Not suprisingly, higher displacement engines have a worse fuel economy because they burn more fuel. A higher displacement engine has 4x less fuel efficiency than a lower displacement engine."
   },
   {
     "objectID": "about.html",
@@ -40,5 +40,12 @@
     "title": "Models",
     "section": "",
     "text": "stan_glm\n family:       gaussian [identity]\n formula:      mpg ~ cylinders + displacement\n observations: 398\n predictors:   3\n------\n             Median MAD_SD\n(Intercept)  36.4    1.2  \ncylinders    -0.5    0.4  \ndisplacement -0.1    0.0  \n\nAuxiliary parameter(s):\n      Median MAD_SD\nsigma 4.7    0.2   \n\n------\n* For help interpreting the printed output see ?print.stanreg\n* For info on the priors used see ?prior_summary.stanreg"
+  },
+  {
+    "objectID": "index.html#what-is-engine-displacement",
+    "href": "index.html#what-is-engine-displacement",
+    "title": "How does the size affect fuel economy?",
+    "section": "What is engine displacement?",
+    "text": "What is engine displacement?\nEngine displacement is the total air in Liters that can fit inside a car’s cylinders combined. A 5.7L can hold and ignite that much air in the cylinders combined. Engines usually have a computer that calculates fuel to air ratio, which is best to stay constant. A larger displacement engine can hold more air, which will use more fuel to maintain the ratio. As a result, I hypothosized that bigger displacement engines burn more fuel."
   }
 ]

@@ -33,7 +33,8 @@ fit_obj <- stan_glm(data = cars,
 fit_obj |> 
   as_tibble() |> 
   ggplot(aes(x = displacement)) +
-  
+
+# making a geom_histogram, using the 'rstanarm' library.
     geom_histogram(aes(y = after_stat(count/sum(count))), 
                    bins = 100) +
     labs(title = "Engine Displacement on MPG",

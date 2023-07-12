@@ -4,6 +4,7 @@ execute:
   echo: false
   warning: false
 ---
+
 ```{r}
 #| echo: false
 #| warning: false
@@ -30,11 +31,13 @@ cars_graph
 # displaying the plot
 
 ```
+
 ## What is engine displacement? 
 Engine displacement is the total air in Liters that can fit inside a car's cylinders combined. A 5.7L can hold and ignite that much air in the cylinders combined. Engines usually have a computer that calculates fuel to air ratio, which is best to stay constant. A larger displacement engine can hold more air, which will use more fuel to maintain the ratio. As a result, I hypothosized that bigger displacement engines burn more fuel.
 
 ## Analysis
 The displacement of an engine has a considerable effect on fuel economy. The data is from the Car Information Dataset found on Kaggle. Engine displacement is the amount of air the engine can combust. Not suprisingly, higher displacement engines have a worse fuel economy because they burn more fuel. A higher displacement engine has 4x less fuel efficiency than a lower displacement engine.
+
 
 ```{r}
 
