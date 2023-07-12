@@ -17,9 +17,9 @@ library(rstanarm)
 cars <- read_csv(file = "Automobile.csv", show_col_types = FALSE)
 
 # Making the ggplot. I want to see the correlation between displacement and mpg, so I set x = displacement and y = mpg. B/c mpg is dependent on x, so it is on the y axis.
-cars_graph <- cars |> ggplot(aes(x = displacement, y = mpg)) + geom_point(mapping = aes(color = mpg)) + labs(title = "The Effect of Engine Displacement on Gas Mileage",
-       x = "Engine Displacement",
-       y = "Miles Per Gallon",
+cars_graph <- cars |> ggplot(aes(x = displacement * 0.01 * 1.3, y = mpg)) + geom_point(mapping = aes(color = mpg)) + labs(title = "The Effect of Engine Displacement on Gas Mileage",
+       x = "Engine Displacement (Liters)",
+       y = "Average Miles Per Gallon",
        subtitle = "Generally, as engine displacement increases,
        gas mileage decreases",
        caption = "Kaggle: Car Information Dataset") + theme_classic() + geom_smooth(method = "lm")
@@ -35,6 +35,9 @@ Engine displacement is the total air in Liters that can fit inside a car's cylin
 
 ## Analysis
 The displacement of an engine has a considerable effect on fuel economy. The data is from the Car Information Dataset found on Kaggle. Engine displacement is the amount of air the engine can combust. Not suprisingly, higher displacement engines have a worse fuel economy because they burn more fuel. A higher displacement engine has 4x less fuel efficiency than a lower displacement engine.
+
+## Conclusion
+I believe that the spread of the values has many factors, such as the weight of the vehicle, what kind of vehicle (car, truck, motorcycle, etc), the profile of the driver, and more. However, there is a pretty clear downward trend. If you want to save fuel, make sure your engine doesn't fit much air!
 
 ```{r}
 

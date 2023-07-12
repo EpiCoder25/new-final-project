@@ -15,6 +15,7 @@ execute:
 library(tidyverse)
 library(primer.data)
 library(rstanarm)
+library(gtsummary)
 # importing all libraries
 
 ```
@@ -25,22 +26,22 @@ library(rstanarm)
 
 cars <- read_csv(file = "Automobile.csv", show_col_types = FALSE)
 fit_obj <- stan_glm(data = cars, 
-                    formula = mpg ~ cylinders +
-                    displacement, 
+                    formula = mpg ~ 
+                    displacement + 1, 
                     family = gaussian, 
                     refresh = 0,
                     seed = 9)
 fit_obj |> 
   as_tibble() |> 
-  ggplot(aes(x = displacement)) +
+  ggplot(aes(x = sigma * 6.7)) +
 
 # making a geom_histogram, using the 'rstanarm' library.
     geom_histogram(aes(y = after_stat(count/sum(count))), 
-                   bins = 100) +
+                   bins = 50) +
     labs(title = "Engine Displacement on MPG",
          subtitle = "Higher displacement engines generally have a lower MPG",
-         x = "Displacement", 
-         y = "MPG",
+         x = "Fuel Economy (MPG)", 
+         y = "Probability",
          caption = "Data source: Car information Dataset") +
     scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
     theme_classic()
@@ -49,4 +50,6 @@ fit_obj |>
 
 fit_obj
 # displaying the model on our website page
+
+tbl_regression(fit_obj, intercept = TRUE)
 ```
